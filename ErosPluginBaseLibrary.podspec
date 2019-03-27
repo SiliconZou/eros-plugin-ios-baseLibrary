@@ -15,7 +15,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "8.0"
   s.source       = { :git => "https://github.com/bmfe/eros-plugin-ios-baseLibrary.git", :tag => s.version.to_s }
   s.requires_arc = true
-  
+  s.static_framework = true
+
   s.dependency 'YYText', '1.0.7'
   s.dependency 'Masonry', '1.1.0'
   s.dependency 'YYModel', '1.0.4'
